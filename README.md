@@ -11,6 +11,8 @@ Logistic regression is a classifier which uses a sigmoid function with a cross e
 ### TwentyNewsGroup 
 The TwentyNewsGroup Dataset consists of close to 18000 newsgroups posts split on 20 different topics. It is divided into two subsets: one for training and the other one for testing. The split between the train and test set is based on whether a post was made before or after a specific date.  
 
+![1](https://github.com/Sagarnandeshwar/Naive_Bayes_And_Logistic_Regression_For_NLP/blob/main/images/1.png)
+
 ### Sentiment140 
 The Sentiment140 dataset is a CSV that consists of various tweets with emoticons removed. There are 6 fields in the data; the polarity of the tweet (0 = negative, 2 = neutral, 4 = positive), the tweet id, the date the tweet was made, the query, the user that tweeted it, and the content of the tweet [2]. For our application, we only considered binary classification (0 = negative and 4 = positive) for the project. 
 
@@ -24,7 +26,15 @@ We start with the text data and convert text to feature vectors.
 ### TF-IDF Vectorizer 
 This method uses word’s frequency(TF) and the inverse document frequency( IDF). Each word is given a TF score and an IDF score and then the method weight of the word is the product of the scores. The term frequency is just the frequency of the word in the document. The IDF score is the log of the ratio of total number of documents and the number of documents which contain the word. Therefore, rarer words will have a higher score. 
 
+![2](https://github.com/Sagarnandeshwar/Naive_Bayes_And_Logistic_Regression_For_NLP/blob/main/images/2.png)
+![3](https://github.com/Sagarnandeshwar/Naive_Bayes_And_Logistic_Regression_For_NLP/blob/main/images/3.png)
+
 ## Result  
+
+![4](https://github.com/Sagarnandeshwar/Naive_Bayes_And_Logistic_Regression_For_NLP/blob/main/images/4.png)
+![5](https://github.com/Sagarnandeshwar/Naive_Bayes_And_Logistic_Regression_For_NLP/blob/main/images/5.png)
+![6](https://github.com/Sagarnandeshwar/Naive_Bayes_And_Logistic_Regression_For_NLP/blob/main/images/6.png)
+![7](https://github.com/Sagarnandeshwar/Naive_Bayes_And_Logistic_Regression_For_NLP/blob/main/images/7.png)
 
 From the result, we can see that Naive Bayes performed well overall. However, a more accurate assessment and a better evaluation would have been made, if we would have tweaked the following parameters if we had not experienced limited computing resources: 
 - Compared efficient feature extraction using CountVectorizer, tf-idf matrix, CounterVectorizer bigram and chose the optimum feature extraction method. 
